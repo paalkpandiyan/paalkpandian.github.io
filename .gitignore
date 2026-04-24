@@ -18,6 +18,16 @@ lib/
 lib64/
 parts/
 sdist/
+
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler
+.bundle/
+vendor/
 var/
 wheels/
 share/python-wheels/
