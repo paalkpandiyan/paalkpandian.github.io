@@ -1,0 +1,23 @@
+:root{
+  --bg:#f7f8fa; --card:#ffffff; --muted:#6b7280; --accent:#0b63d6; --maxw:900px;
+  --sans: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+*{box-sizing:border-box}
+body{font-family:var(--sans);background:var(--bg);color:#111;margin:0;padding:32px;display:flex;justify-content:center}
+.container{width:100%;max-width:var(--maxw)}
+.header{display:flex;gap:16px;align-items:center;margin-bottom:20px}
+.logo{width:92px;height:92px;background:#fff;border-radius:6px;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.h1{font-size:22px;margin:0}
+.nav{margin-left:auto}
+.nav a{color:var(--accent);text-decoration:none;margin-left:14px;font-weight:600}
+.card{background:var(--card);padding:20px;border-radius:8px;box-shadow:0 4px 18px rgba(12,15,20,0.04)}
+.grid{display:grid;grid-template-columns:1fr 280px;gap:18px}
+@media(max-width:880px){.grid{grid-template-columns:1fr} .nav{margin-top:12px}}
+h2{margin:0 0 8px 0;color:#0f1724}
+h3{margin:8px 0;color:#0b3b73}
+p{margin:6px 0;color:var(--muted);line-height:1.45}
+.list{margin:8px 0;padding-left:18px}
+.small{font-size:13px;color:var(--muted)}
+.footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+.badge{display:inline-block;padding:6px 8px;border-radius:6px;background:#eef3ff;color:var(--accent);font-weight:600;font-size:13px}
+.contact a{color:var(--accent);text-decoration:none}

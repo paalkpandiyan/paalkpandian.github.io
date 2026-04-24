@@ -1,60 +1,31 @@
 # Paal KP's Personal Website
 
-This is my personal website built with Jekyll and hosted on GitHub Pages.
+This repository now publishes a static website via GitHub Pages from the repository root.
 
 ## About
 
-Welcome to my corner of the internet! Here you'll find information about me, my projects, and ways to get in touch.
+The website content is served from the root HTML pages and `assets/styles.css`.
 
-## Technologies Used
+## GitHub Pages Setup
 
-- Jekyll (static site generator)
-- Minima theme
-- Hosted on GitHub Pages
+- Source: `main` branch
+- Publish directory: root
+- `.nojekyll` is included to disable Jekyll processing and serve the static files directly.
 
-## Development
+## Local Preview
 
-### Prerequisites
-
-- Ruby (version 2.5.0 or higher)
-- Bundler
-
-### Local Development
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/paalkpandian/paalkpandian.github.io.git
-   cd paalkpandian.github.io
-   ```
-
-2. Install dependencies:
-   ```bash
-   bundle install
-   ```
-
-3. Run the development server:
-   ```bash
-   bundle exec jekyll serve
-   ```
-
-4. Open your browser to `http://localhost:4000`
-
-### Building
-
-To build the site for production:
+Open the HTML files directly in your browser to preview the site locally, or use a simple static server such as:
 
 ```bash
-bundle exec jekyll build
+python3 -m http.server 8000
 ```
 
-The built site will be in the `_site` directory.
+Then browse to `http://localhost:8000`.
 
-## Customization
+## Notes
 
-- Edit `_config.yml` to change site settings
-- Modify `index.md` for the homepage content
-- Add new pages in the root directory or `_pages` folder
-- Customize styles in `assets/main.scss`
+- The `site/` folder contains the generated static site source.
+- Root files have been synced from `site/` so GitHub Pages can serve the site directly.
 
 ## License
 
